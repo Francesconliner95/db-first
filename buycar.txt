@@ -1,0 +1,18 @@
+id                INT, PRIMARY KEY (=> AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
+marca             VARCHAR(20), NOT NULL, INDEX
+modello           VARCHAR(20), NOT NULL, DEFAULT('tutti')
+versione          VARCHAR(20), NULL
+data-immat        DD-MM-YYYY, NOT NULL
+cilindrata        SMALLINT, NOT NULL, DEFAULT('nessuna')
+cavalli           SMALLINT, NOT NULL
+carburante        VARCHAR(20), NOT NULL
+prezzo            DECIMAL(9, 2), NOT NULL
+porte             TINYINT, NULL
+posti             TINYINT, NULL
+proprietari       TINYINT, NOT NULL, DEFAULT(1)
+condizioni        VARCHAR(20), NOT NULL
+bollo_scaduto     TINYINT, NOT NULL, DEFAULT(1)
+ass_scaduta       TINYINT, NOT NULL, DEFAULT(1)
+n_targa           VARCHAR(10), NOT NULL
+paese_origine     VARCHAR(2), NOT NULL, DEFAULT('IT')
+note              VARCHAR(255), NULL
